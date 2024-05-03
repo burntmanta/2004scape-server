@@ -70,6 +70,14 @@ if (p_finduid(uid) = true) {
     @please_finish;
 }
 
+[debugproc,ardougne]
+if_close;
+if (p_finduid(uid) = true) {
+    ~player_teleport_normal(0_41_51_38_37);
+} else {
+    @please_finish;
+}
+
 [debugproc,giants]
 if_close;
 if (p_finduid(uid) = true) {

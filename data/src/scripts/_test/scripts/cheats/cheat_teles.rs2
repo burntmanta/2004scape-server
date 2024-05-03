@@ -62,6 +62,30 @@ if (p_finduid(uid) = true) {
     @please_finish;    
 }
 
+[debugproc,edgeville]
+if_close;
+if (p_finduid(uid) = true) {
+    ~player_teleport_normal(0_48_54_15_40); // Glory Teleport
+} else {
+    @please_finish;
+}
+
+[debugproc,ardougne]
+if_close;
+if (p_finduid(uid) = true) {
+    ~player_teleport_normal(0_41_51_38_37); // Ardougne Spell Teleport
+} else {
+    @please_finish;
+}
+
+[debugproc,yanille]
+if_close;
+if (p_finduid(uid) = true) {
+    ~player_teleport_normal(0_40_48_46_21);
+} else {
+    @please_finish;
+}
+
 [debugproc,giants]
 if_close;
 if (p_finduid(uid) = true) {

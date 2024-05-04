@@ -86,6 +86,14 @@ if (p_finduid(uid) = true) {
     @please_finish;
 }
 
+[debugproc,karamja]
+if_close;
+if (p_finduid(uid) = true) {
+    ~player_teleport_normal(0_45_49_38_40);
+} else {
+    @please_finish;
+}
+
 [debugproc,heroesguild]
 if_close;
 if (p_finduid(uid) = true) {
